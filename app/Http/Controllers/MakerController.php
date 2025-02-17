@@ -81,6 +81,10 @@ class MakerController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = Maker::find($id);
+
+        $data->delete();
+
+        return redirect()->back();
     }
 }

@@ -17,6 +17,9 @@ use App\Http\Controllers\ModelController;
 
 Route::resource('makers',MakerController::class);
 Route::resource('models',ModelController::class);
+
+//Route::get('/makers.destroy/{id}',[MakerController::class,'delete_maker']);
+
 //Route::get('/models', [ModelController::class, 'index'])->name('models.index');
 
 //Route::get('\makers', [MakerController::class, 'index'])->name('makers.index');
