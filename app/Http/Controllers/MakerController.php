@@ -36,7 +36,15 @@ class MakerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required|min:3|max:255',
+        ]);
+        
+        $maker = new Maker();
+        $maker->name = $request->name;
+        $maker->save();
+
+        return redirect()->route('makers.index')->with('success', 'Jármű sikeresen hozzáadva');
     }
 
     /**

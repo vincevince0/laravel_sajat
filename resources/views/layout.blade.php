@@ -11,6 +11,8 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('fontawesome/css/all.css') }}" >
+    <link rel="stylesheet" href="{{ asset('style.css') }}">
+    
 
     <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
 </head>

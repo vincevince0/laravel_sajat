@@ -16,7 +16,10 @@ use App\Http\Controllers\ModelController;
 */
 
 Route::resource('makers',MakerController::class);
-Route::resource('models',ModelController::class);
+Route::resource('fuels',MakerController::class);
+Route::resource('bodies',ModelController::class);
+Route::resource('vehicles',MakerController::class);
+Route::resource('models',MakerController::class);
 
 //Route::get('/makers.destroy/{id}',[MakerController::class,'delete_maker']);
 
